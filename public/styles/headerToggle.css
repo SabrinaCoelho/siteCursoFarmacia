@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik&display=swap');
+        
+:root{
+    --univas_color: #2cbc59;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    user-select: none;
+}
+body{
+    
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+header{
+    background-color: var(--univas_color);
+    width: 100%;
+    /* display: flex;
+    align-items: center; */
+}
+.navUnivas{
+    /* background-color: rgb(255, 255, 0); */
+    margin: 0 auto;
+    width: 80%;
+    align-items: center;
+}
+.navUnivas, .navUnivas ul{
+    padding: 5px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navUnivas ul li{
+    padding: 0 20px;
+}
+.logoContainer{
+    width: 185px;
+}
+.logoContainer > img{
+    width: 100%;
+}
+a{
+    color: black;
+}
+.navUnivas ul li:hover, .navUnivas a:hover{
+    color: white;
+}
+.hamburguer{
+    background-color: transparent;
+    border: none;
+    padding: 0 3px; 
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 10%;
+    display: none;
+}
+#checkHam{
+    display: none;
+}
+button, li{
+    cursor: pointer;
+}
+.navContainerUnivas{
+    width: 100%;
+    background-color: var(--univas_color);
+}
+.navContainerCurso{
+    width: 100%;
+    background-color: white;
+}
+/* ------------------------------ */
+.imgCurso{
+    width: 100%;
+    height: 50vh;
+    background-blend-mode: color;
+    background-image: url("../assets/matt-briney-0tfz7ZoXaWc-unsplash.jpg"), linear-gradient(180deg, rgba(255, 255, 255, 0)70%, white);
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    /* background-attachment: fixed; */
+    background-position: bottom;
+}
+/* ----------------------------- */
+.navCurso{
+    background-color: white;
+    width: 80%;
+    /* overflow: hidden; */
+    margin: 0 auto;
+}
+.farmaciaContainer{
+    background-color: white;
+}
+.navCurso, .navCurso ul{
+    padding: .3125rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.navCurso ul{
+    padding: 0;
+    overflow-x: scroll;
+    max-width: 100%;
+}
+.navCurso ul::-webkit-scrollbar{/* conferir para os outros browsers */
+    display: none;
+}
+
+.navCurso ul li{
+    position: relative;
+    padding: 10px 20px;
+}
+.farmaciaContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3px 5px 3px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 3.75em;/* 60px */
+    text-align: end;
+    width: 350px;
+    
+    /* height: 80px; */
+    position: relative;
+    transform: translateY(-20px);
+
+    text-align: end;
+    background-image: linear-gradient(90deg, rgba(232, 187, 187, 0)5%, var(--univas_color));
+}
+.farmaciaContainer img{
+    height: 1em;
+}
+.navCurso ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color: var(--univas_color);
+    left: 0;
+    bottom: 0;
+    transition-duration: .3s;
+}
+.navCurso ul li a:hover::after{
+    width: 100%;
+}
+@media screen and (max-width: 768px){
+    .navUnivas{
+        width: 100%;
+        flex-direction: column;
+    }
+    .navUnivas ul{
+        flex-direction: column;
+        justify-content: unset;
+        text-align: center;
+
+        width: 100%;
+        height: 0;
+        padding: 0;
+        overflow: hidden;
+        transition: all .5s;
+    }
+    
+    .navUnivas ul li{
+        width: 100%;
+        padding: 5px 0px;
+    }
+    .logoContainer{
+        margin: 5px 0;
+    }
+    .navUnivas ul li:hover{
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .hamburguer{
+        display: flex;
+    }
+    
+    #checkHam:checked ~ ul{
+        display: flex;
+        height: 140px;
+    }
+    /* ------------------------------ */
+    .navCurso{
+        flex-direction: column;
+        width: 100% !important;
+        padding: 0 16px;
+    }
+    .navCurso ul li{
+        white-space: nowrap;
+    }
+}
