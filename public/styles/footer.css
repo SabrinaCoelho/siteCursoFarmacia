@@ -1,0 +1,43 @@
+/* :root{
+    --univas_color: #2cbc59;
+} */
+footer{
+    color: white;
+    padding: 1.5rem 0 3rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--univas_color);
+}
+footer a{
+    color: white;
+}
+footer h1{
+    font-size: 1.5625rem;
+    margin: .5em 0;
+}
+footer h2{
+    font-size: 1.2rem;
+    margin: .3em 0;
+}
+footer div{
+    margin: 0 2em;
+}
+footer .logoContainer{
+    /* margin: 0 4em; */
+    align-self: center;
+}
+@media screen and (max-width: 768px){
+    footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    footer div{
+        margin: 0;
+        width: 100%;
+        /* background-color: palevioletred; */
+        padding: 0 1em;
+    }
+}
