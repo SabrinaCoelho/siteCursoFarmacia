@@ -1,0 +1,23 @@
+.titleEgressos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.reuniao{
+    margin-right: 1em;
+    margin-bottom: 1em;
+    width: 600px;
+    float: left;
+}
+@media screen and (max-width: 825px){
+    .egressos article{
+        display: flex;
+        flex-direction: column;
+        /* background-color: red; */
+    }
+    .reuniao{
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+}
