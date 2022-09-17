@@ -38,3 +38,18 @@ section{
     font-size: 1.875rem;
     margin: .3em 0;
 }
+button{
+    text-align: center;
+    padding: 10px 25px;
+    align-self: center;
+    background-color: white;
+    font-weight: bold;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 0;
+}
+button:hover{
+    transition-duration: .5s;
+    background-color: black;
+    color: white;
+}

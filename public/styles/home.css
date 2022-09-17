@@ -1,0 +1,10 @@
+.noticias{
+    margin: 20px 0;
+}
+.noticia{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
