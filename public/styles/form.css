@@ -22,6 +22,9 @@ form input:focus, form select:focus{
 form .input label{
     margin: .5em 0;
 }
+button{
+    margin: 2em 0;
+}
 /* button{
     text-align: center;
     padding: 10px 25px;

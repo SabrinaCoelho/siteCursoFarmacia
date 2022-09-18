@@ -36,7 +36,7 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.navUnivas ul li{
+.navUnivas ul li:not(.idioma){
     padding: 0 20px;
 }
 .logoContainer{
@@ -150,12 +150,53 @@ button, .navUnivas li, .navCurso li{
 .navCurso ul li a:hover::after{
     width: 100%;
 }
-.active::after{
-    /* content: 'h';
-    height: 3px;
-    position: absolute;
+.active{
     background-color: var(--univas_color);
-    width: 100%; */
+}
+.active a{
+    color: white !important;
+}
+/* ---------------------- */
+.select select{
+    font-size: 1em;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: 0;
+    background-color: var(--univas_color);
+}
+.select{
+    background-color: var(--univas_color);
+    position: relative;
+    width: 100px;
+    height: 2em;
+    line-height: 2;
+    overflow: hidden;
+    /* border-radius: .25em; */
+}
+.select select{
+    width: 100px;
+    flex: 1;
+    padding: 0 .5em;
+    
+    cursor: pointer;
+}
+.select select:hover{
+    color: white;
+}
+.select::after{
+    content: '\25BC';
+    color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 .5em;
+    cursor: pointer;
+    pointer-events: none;
+    transition: .25s all ease;
+}
+.select:hover::after{
+    color: white;
 }
 @media screen and (max-width: 768px){
     .navUnivas{
@@ -190,7 +231,7 @@ button, .navUnivas li, .navCurso li{
     
     #checkHam:checked ~ ul{
         display: flex;
-        height: 140px;
+        height: 110px;
     }
     /* ------------------------------ */
     .navCurso{
@@ -200,5 +241,18 @@ button, .navUnivas li, .navCurso li{
     }
     .navCurso ul li{
         white-space: nowrap;
+    }
+    /* -------------- */
+    .select::after{
+        position: static;
+        top: 0;
+        right: 30px;
+        
+    }
+    .select:hover{
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .select{
+        line-height: normal;
     }
 }

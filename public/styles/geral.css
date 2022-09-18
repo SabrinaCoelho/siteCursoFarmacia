@@ -53,3 +53,6 @@ button:hover{
     background-color: black;
     color: white;
 }
+article{
+    text-indent: 30px;
+}

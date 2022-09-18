@@ -159,6 +159,10 @@ td[rowspan]{
 .depo small{
     font-style: italic;
 }
+/* ------------------- */
+.visitar{
+    margin: 2em 0;
+}
 @media screen and (max-width: 918px){
     .sobreCurso{
         margin-top: 0;
