@@ -1,0 +1,220 @@
+.lab{
+    width: 100%;
+    max-width: 1440px;
+    height: 80vh;
+    margin: 0 auto;
+    background-image: url("../assets/trnava-university-_9xRHrMOjeg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+/* ----------- */
+.sobreCurso{
+    margin-top: 0;
+    /* position: absolute; */
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.sobreCursoTexto{
+    position: relative;
+    top: -100px;
+    width: 700px;
+    height: 400px;
+    padding: 10px;
+    background-color: white;
+}
+.coor{
+    align-self: center;
+    width: calc(100% - 700px);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.fotoRosto{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    
+}
+.imagemCoor{
+    background-image: url("../assets/sigmund-MQ2xYBHImKM-unsplash.jpg");
+    background-size: 300px;
+    background-position: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* -------------- */
+.profissional {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: center;
+}
+.profissionalImagem{
+    width: 50%;
+    margin: 0 10px;
+    height: 90vh;
+    background-image: url("../assets/ani-kolleshi-7jjnJ-QA9fY-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.sobreProfissional{
+    width: 50%;
+    align-self: center;
+}
+/* -------------- */
+.grade{
+    height: auto;
+}
+.gradeContainer{
+    display: flex;
+    flex-direction: row;
+}
+.gradeContent{
+    width: 70%;
+    height: 100%;
+    background-color: white;
+    
+}
+
+thead tr th{
+    width: 350px;
+    background-color: var(--univas_color);
+    color: white;
+}
+.fim td{
+    border-bottom: 2px solid black;
+}
+thead tr th:first-child{
+    width: 100px;
+}
+tr{
+    
+    height: 25px;
+}
+td[rowspan]{
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+/* -------------- */
+.infoAddGrade span{
+    transform: translateY(4px);
+}
+.infoAddGrade ul{
+    margin-left: 20px;
+}
+.infoAddGrade{
+    margin-left: 1em;
+    /* position: sticky;
+    top: 0; */
+    /* background-color: aqua; */
+}
+.infoAddGrade .duracao{
+    font-size: 45px;
+}
+.disciplinasEletivas{
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.disciplinasEletivas button{
+    margin: 10px 0;
+}
+/* ---------------- */
+.aluno1{
+    background-image: url("../assets/batel-studio-ttSRjiYG_WM-unsplash.jpg");
+    background-size: 300px;
+    background-position: -50px -30px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+}
+.aluno2{
+    background-image: url("../assets/stephanie-liverani-Zz5LQe-VSMY-unsplash.jpg");
+    background-size: 300px;
+    background-position: center;
+    border-radius: 50%;
+}
+.depoimentos span{
+    font-size: 50px;
+}
+.depo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.depo article{
+    margin: 0 30px;
+}
+.fotoRostoContainer{
+    width: 210px;
+    height: 210px;
+}
+.depo small{
+    font-style: italic;
+}
+@media screen and (max-width: 918px){
+    .sobreCurso{
+        margin-top: 0;
+        height: auto;
+        position: static;
+        display: flex;
+        flex-direction: column;
+    }
+    .sobreCursoTexto{
+        position: static;
+        width: 100%;
+        height: auto;
+        /* top: -100px;
+        
+        height: 400px;
+        padding: 10px; */
+
+        /* background-color: rgb(255, 170, 0); */
+    }
+    .coor{
+        width: 100%;
+        margin: a auto;
+    }
+    .profissional {
+        display: flex;
+        flex-direction: column;
+    }
+    .profissionalImagem{
+        width: 100%;
+        margin: 0 10px;
+        height: 70vh;
+        background-size: cover;
+        background-position: top;
+    }
+    .sobreProfissional{
+        width: 100%;
+    }
+    .gradeContainer{
+        flex-direction: column-reverse;
+    }
+    .infoAddGrade{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gradeContent{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px){
+    .depo{
+        flex-direction: column;
+        align-items: center;
+    }
+    .depoimentos .depo:nth-child(3){
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}

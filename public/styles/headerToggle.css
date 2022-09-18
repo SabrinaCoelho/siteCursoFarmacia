@@ -150,6 +150,13 @@ button, .navUnivas li, .navCurso li{
 .navCurso ul li a:hover::after{
     width: 100%;
 }
+.active::after{
+    /* content: 'h';
+    height: 3px;
+    position: absolute;
+    background-color: var(--univas_color);
+    width: 100%; */
+}
 @media screen and (max-width: 768px){
     .navUnivas{
         width: 100%;
