@@ -51,7 +51,7 @@
 .profissional {
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
 }
 .profissionalImagem{
@@ -110,9 +110,6 @@ td[rowspan]{
 }
 .infoAddGrade{
     margin-left: 1em;
-    /* position: sticky;
-    top: 0; */
-    /* background-color: aqua; */
 }
 .infoAddGrade .duracao{
     font-size: 45px;
@@ -175,12 +172,6 @@ td[rowspan]{
         position: static;
         width: 100%;
         height: auto;
-        /* top: -100px;
-        
-        height: 400px;
-        padding: 10px; */
-
-        /* background-color: rgb(255, 170, 0); */
     }
     .coor{
         width: 100%;
@@ -193,7 +184,7 @@ td[rowspan]{
     .profissionalImagem{
         width: 100%;
         margin: 0 10px;
-        height: 70vh;
+        height: 50vh;
         background-size: cover;
         background-position: top;
     }

@@ -13,7 +13,6 @@
     .egressos article{
         display: flex;
         flex-direction: column;
-        /* background-color: red; */
     }
     .reuniao{
         width: 100%;

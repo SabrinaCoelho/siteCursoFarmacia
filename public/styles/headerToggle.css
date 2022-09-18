@@ -1,21 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Rubik&display=swap');
-        
-:root{
-    --univas_color: #2cbc59;
-}
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    
-}
-body{
-    
-    font-family: 'Rubik', sans-serif;
-    font-family: 'Roboto Condensed', sans-serif;
-} */
+
 header{
     user-select: none;
     background-color: var(--univas_color);
@@ -108,7 +91,7 @@ button, .navUnivas li, .navCurso li{
     overflow-x: scroll;
     max-width: 100%;
 }
-.navCurso ul::-webkit-scrollbar{/* conferir para os outros browsers */
+.navCurso ul::-webkit-scrollbar{
     display: none;
 }
 
